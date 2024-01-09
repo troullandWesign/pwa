@@ -7,7 +7,6 @@ const APP_STATIC_RESOURCES = [
     "/style.css",
     "/app.js",
     "/manifest.json",
-    "/icons/wheel.svg",
     "/icon.png",
 ];
 
