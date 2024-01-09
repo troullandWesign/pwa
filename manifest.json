@@ -1,0 +1,16 @@
+{
+    "name": "Test Thomas",
+    "short_name": "TT",
+    "description": "Ceci est un test",
+    "start_url": "/",
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone",
+    "icons": [
+          {
+        "src": "icon.png",
+        "sizes": "48x48"
+      }
+    ]
+  }
+  
