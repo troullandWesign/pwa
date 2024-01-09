@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Cycle Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icons/circle.svg" />
+  </head>
+
+  <body>
+    <h1>Suivi des cycles</h1>
+    <form>
+      <fieldset>
+        <legend>
+          Veuillez saisir la date de début et la date de fin de votre cycle
+        </legend>
+        <p>
+          <label for="start-date">Date de début</label>
+          <input type="date" id="start-date" required />
+        </p>
+        <p>
+          <label for="end-date">Date de fin</label>
+          <input type="date" id="end-date" required />
+        </p>
+      </fieldset>
+      <p>
+        <button type="submit">Ajouter un cycle menstruel</button>
+      </p>
+    </form>
+    <section id="past-periods">
+      <!-- <h2>Cycles antérieurs</h2>
+        <ul>
+            <li>Du 01/01/2024 au 01/06/2024</li>
+            <li>Du 01/29/2024 au 02/04/2024</li>
+        </ul> -->
+    </section>
+    <script src="app.js" defer></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js").then(
+          (registration) => {
+            console.log(
+              "Enregistrement du service worker réussi :",
+              registration
+            );
+          },
+          (error) => {
+            console.error(
+              `Échec de l'enregistrement du service worker : ${error}`
+            );
+          }
+        );
+      } else {
+        console.error("Les service workers ne sont pas pris en charge.");
+      }
+    </script>
+  </body>
+</html>

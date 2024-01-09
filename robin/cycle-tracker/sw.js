@@ -1,5 +1,5 @@
 const VERSION = "v1";
-const CACHE_NAME = `pwa-poc-${VERSION}`;
+const CACHE_NAME = `period-tracker-${VERSION}`;
 
 const APP_STATIC_RESOURCES = [
     "/",
@@ -8,7 +8,6 @@ const APP_STATIC_RESOURCES = [
     "/app.js",
     "/manifest.json",
     "/icons/wheel.svg",
-    "/icon.png",
 ];
 
 self.addEventListener("install", (event) => {
