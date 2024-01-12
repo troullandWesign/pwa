@@ -20,6 +20,7 @@ self.addEventListener("install", (event) => {
     );
 });
 
+/*
 self.addEventListener("activate", (event) => {
     event.waitUntil(
         (async () => {
@@ -57,4 +58,4 @@ self.addEventListener("fetch", (event) => {
             return new Response(null, { status: 404 });
         })(),
     );
-});
+});*/
